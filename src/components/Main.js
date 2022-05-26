@@ -1,10 +1,11 @@
 import { StyleSheet, View } from 'react-native'
-import Constants from 'expo-constants'
 import RepositoryList from './RepositoryList'
+import AppBar from './AppBar'
 
 export default function Main () {
   return (
     <View style={styles.container}>
+      <AppBar />
       <RepositoryList />
     </View>
   )
@@ -12,6 +13,6 @@ export default function Main () {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: Constants.statusBarHeight
+    flex: 1
   }
 })
