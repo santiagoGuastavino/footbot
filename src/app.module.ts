@@ -1,7 +1,7 @@
 // Dependencies
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { BotModule } from './bot/bot.module';
+import { BotModule } from './resources/bot/bot.module';
 import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
