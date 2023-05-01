@@ -1,7 +1,7 @@
 // Dependencies
 import { Injectable } from '@nestjs/common';
 import * as TelegramBot from 'node-telegram-bot-api';
-import { Cron, CronExpression } from '@nestjs/schedule';
+// import { Cron, CronExpression } from '@nestjs/schedule';
 
 // Interfaces
 import { Message } from './interfaces/message.interface';
@@ -25,8 +25,8 @@ export class BotService {
     this.bot.sendMessage(userId, msg);
   };
 
-  @Cron(CronExpression.EVERY_10_SECONDS)
-  sendAutoMessage(): void {
-    this.sendMessageToUser(1469731081, 'auto message');
-  }
+  // @Cron(CronExpression.EVERY_10_SECONDS)
+  // sendAutoMessage(): void {
+  //   this.sendMessageToUser(1469731081, 'auto message');
+  // }
 }
