@@ -25,8 +25,8 @@ export class BotService {
     this.bot.sendMessage(userId, msg);
   };
 
-  // @Cron(CronExpression.EVERY_30_MINUTES)
-  // sendAutoMessage(): void {
-  //   this.sendMessageToUser(1469731081, 'auto message');
-  // }
+  @Cron(CronExpression.EVERY_10_SECONDS)
+  sendAutoMessage(): void {
+    this.sendMessageToUser(1469731081, 'auto message');
+  }
 }
